@@ -18,7 +18,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 # ---------------------------------------------------------------- fonts ---
 
-FONT_DIR = "/usr/share/fonts/truetype/dejavu"
+FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 SERIF = os.path.join(FONT_DIR, "DejaVuSerif.ttf")
 SERIF_B = os.path.join(FONT_DIR, "DejaVuSerif-Bold.ttf")
 SANS = os.path.join(FONT_DIR, "DejaVuSans.ttf")
